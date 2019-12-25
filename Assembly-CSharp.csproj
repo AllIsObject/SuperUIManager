@@ -63,14 +63,17 @@
     <Compile Include="Assets\Scripts\frame\LogicMM.cs" />
     <Compile Include="Assets\Scripts\frame\MVC.cs" />
     <Compile Include="Assets\Scripts\game\Instance.cs" />
+    <Compile Include="Assets\Scripts\game\test\panel\TestPanel.cs" />
     <Compile Include="Assets\Scripts\game\test\TestControl.cs" />
     <Compile Include="Assets\Scripts\game\test\TestModel.cs" />
+    <Compile Include="Assets\Scripts\ui\component\MyButton.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyComponent.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyText.cs" />
     <Compile Include="Assets\Scripts\ui\IPanel.cs" />
     <Compile Include="Assets\Scripts\ui\MyGUIManager.cs" />
     <Compile Include="Assets\Scripts\ui\MyPanel.cs" />
-    <Compile Include="Assets\Scripts\ui\panel\TestPanel.cs" />
+    <Compile Include="Assets\Scripts\ui\MyPanelEventListener.cs" />
+    <Compile Include="Assets\Scripts\ui\ugui_exp\IUIEvent.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/workspace/unity3d/SuperUIManager_git/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

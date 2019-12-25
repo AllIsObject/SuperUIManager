@@ -24,4 +24,7 @@ public class PanelBase : IPanel
     {
         throw new NotImplementedException();
     }
+    public virtual void OnClick(MonoBehaviour behaviour) {
+
+    }
 }

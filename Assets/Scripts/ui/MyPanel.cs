@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class MyPanel :PanelBase
 {
+
+    MyPanelEventListener _listener = null;
     public override bool IsVisible => gameObject && gameObject.activeSelf;
 
     public override void Display(bool b)
@@ -45,7 +47,14 @@ public class MyPanel :PanelBase
         //从res中获取预制体
         _gameObject= GameObject.Instantiate(Resources.Load<GameObject>(_panelResName));
         if (!_gameObject) Debug.Log($"{_panelResName},Resources中找不到");
+        //加入管理
         MyGUIManager.GetInstance().AddPanelObject(this);
+
+        if (_listener == null)
+            _listener = new MyPanelEventListener();
+        var eventBase = _gameObject.AddComponent<IUIEvent>();
+        _listener.OnInit(this, eventBase);
+
     }
     //填充数据 2.0 组件和协议之间建立多对多的关系
     public void FillData(object obj) {
