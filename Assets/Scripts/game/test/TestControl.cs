@@ -53,11 +53,11 @@ public class TestControl :SmartControl<TestModel>
     #endregion
     #region 数据
     public class B2C_GET {
-        public string key1 = "Value";
+        public string key = "Value";
     }
     public class B2C_POST
     {
-        public string key2 = "Value";
+        public string key = "Value";
     }
     #endregion
 }

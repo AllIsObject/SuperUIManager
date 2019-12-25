@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 498}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 136
+  controlID: 63
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 348}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 85
+  controlID: 76
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 498}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 12
+  controlID: 128
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -291,8 +291,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 932
-  m_MinSize: {x: 277, y: 74}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -358,18 +358,18 @@ MonoBehaviour:
       y: 17
       width: 1391
       height: 634
-    m_Scale: {x: 1.1245539, y: 1.1245539}
-    m_Translation: {x: 649.47736, y: 311.39505}
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 695.5, y: 317}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -577.54224
-      y: -276.9054
-      width: 1236.9349
-      height: 563.7791
+      x: -695.5
+      y: -317
+      width: 1391
+      height: 634
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
@@ -577,9 +577,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f4230000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c2fbffff
+      m_ExpandedIDs: 52f9ffff54f9ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -641,19 +641,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/frame
+    - Assets/Scripts/ui/component
   m_ViewMode: 0
   m_StartGridSize: 16
   m_LastFolders: []
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: E:\workspace\unity3d\SuperUIManager
+  m_LastProjectPath: E:\workspace\unity3d\SuperUIManager_git
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: e01f0000
     m_LastClickedID: 8160
-    m_ExpandedIDs: 00000000142600001c2600009826000028270000622700008627000098270000e0270000
+    m_ExpandedIDs: 00000000322b00003a2b0000b62b0000462c0000802c0000a02c0000b22c0000fa2c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -681,21 +681,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000142600001c2600009826000028270000622700008627000098270000e0270000
+    m_ExpandedIDs: ffffffff00000000322b00003a2b0000b62b0000462c0000802c0000a02c0000b22c0000fa2c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: MVC
-      m_OriginalName: MVC
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 9204
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 

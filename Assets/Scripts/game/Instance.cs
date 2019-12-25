@@ -13,7 +13,7 @@ public class Instance : MonoBehaviour
     }
     int i=0;
     void SetData() {
-       // LogicMM.testControl.b2C_GET = new TestControl.B2C_GET() { key =(i++).ToString() };
+       LogicMM.testControl.b2C_GET = new TestControl.B2C_GET() { key =(i++).ToString() };
     }
     // Update is called once per frame
     void Update()
