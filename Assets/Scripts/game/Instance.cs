@@ -8,7 +8,7 @@ public class Instance : MonoBehaviour
     void Start()
     {
         LogicMM.FireOnAppInit();
-        InvokeRepeating("SetData", 1, 1);
+        //InvokeRepeating("SetData", 1, 1);
         
     }
     int i=0;

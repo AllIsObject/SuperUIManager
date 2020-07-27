@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
+
 public interface IPanel {
     void Display(bool b);
     bool IsVisible { get; }
+    void InitPanel();
 }
 public class PanelBase : IPanel
 {
@@ -24,7 +27,18 @@ public class PanelBase : IPanel
     {
         throw new NotImplementedException();
     }
+
+    public virtual void InitPanel()
+    {
+
+    }
+
     public virtual void OnClick(MonoBehaviour behaviour) {
+
+    }
+
+    public virtual void OnDrag(MyDragData  myDragData)
+    {
 
     }
 }

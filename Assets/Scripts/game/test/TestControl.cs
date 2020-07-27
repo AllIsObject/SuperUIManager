@@ -25,8 +25,7 @@ public class TestControl :SmartControl<TestModel>
     public override void OnAppInit()
     {
         base.OnAppInit();
-        AddPanel<TestPanel>();
-       
+        MyGUIManager.GetInstance().GetOrCreatePanel<TestPanel>().Display(true);
     }
     #region 公用方法
     public void AddPanel<T>() where T : PanelBase, new()

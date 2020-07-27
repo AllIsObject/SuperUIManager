@@ -10,6 +10,7 @@ public class MyPanel :PanelBase
 {
 
     MyPanelEventListener _listener = null;
+    Canvas canvas;
     public override bool IsVisible => gameObject && gameObject.activeSelf;
 
     public override void Display(bool b)
@@ -47,8 +48,14 @@ public class MyPanel :PanelBase
         //从res中获取预制体
         _gameObject= GameObject.Instantiate(Resources.Load<GameObject>(_panelResName));
         if (!_gameObject) Debug.Log($"{_panelResName},Resources中找不到");
+
         //加入管理
         MyGUIManager.GetInstance().AddPanelObject(this);
+        canvas = gameObject.GetComponent<Canvas>();
+        canvas.renderMode = RenderMode.ScreenSpaceCamera;
+        canvas.worldCamera = Camera.main;
+        InitPanel();
+
 
         if (_listener == null)
             _listener = new MyPanelEventListener();
@@ -72,4 +79,5 @@ public class MyPanel :PanelBase
             }
         }
     }
+
 }
