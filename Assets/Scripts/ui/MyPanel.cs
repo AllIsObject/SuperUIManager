@@ -43,6 +43,7 @@ public class MyPanel :PanelBase
 
         }
         gameObject.SetActive(true);
+        OnShow();
     }
     void BuildPanel() {
         //从res中获取预制体

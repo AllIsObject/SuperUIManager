@@ -69,8 +69,10 @@
     <Compile Include="Assets\Scripts\ui\component\MyButton.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyComponent.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyDrag.cs" />
+    <Compile Include="Assets\Scripts\ui\component\MyHorizontalLayoutGroup.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyHorizontalOrVerticalLayoutGroup.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyText.cs" />
+    <Compile Include="Assets\Scripts\ui\component\VerticalLayoutGroup.cs" />
     <Compile Include="Assets\Scripts\ui\IPanel.cs" />
     <Compile Include="Assets\Scripts\ui\MyGUIManager.cs" />
     <Compile Include="Assets\Scripts\ui\MyPanel.cs" />

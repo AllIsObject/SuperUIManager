@@ -9,6 +9,8 @@ using UnityEngine.UI;
 public class TestPanel :MyPanel
 {
     RectTransform drag;
+    MyHorizontalLayoutGroup my_hor_Scroll;
+    MyHorizontalLayoutGroup content;
     public TestPanel() {
         _panelResName = "TestPanel";
     }
@@ -17,8 +19,20 @@ public class TestPanel :MyPanel
     {
         base.InitPanel();
         drag = gameObject.FindChild("drag").transform as RectTransform;
+        my_hor_Scroll = gameObject.FindChild("my_hor_Scroll").GetComponent<MyHorizontalLayoutGroup>();
+        content = gameObject.FindChild("content").GetComponent<MyHorizontalLayoutGroup>();
     }
 
+    public override void OnShow()
+    {
+        base.OnShow();
+        my_hor_Scroll.InitChildren(5,(i,rect)=> {
+
+        });
+        content.InitChildren(10,(i,rect)=> {
+
+        });
+    }
 
     public override void OnClick(MonoBehaviour behaviour)
     {
@@ -29,8 +43,18 @@ public class TestPanel :MyPanel
     public override void OnDrag(MyDragData myDragData)
     {
         base.OnDrag(myDragData);
-        if(myDragData.go.name== "drag")
-            drag.anchoredPosition = myDragData.uiPos;
+    }
+
+    public override void OnDragEnd(MyDragData myDragData)
+    {
+        base.OnDragEnd(myDragData);
+        Debug.Log($"OnDragEnd-- ui_before_Pos:{myDragData.ui_cur_Pos} ");
+    }
+
+    public override void OnDragStart(MyDragData myDragData)
+    {
+        base.OnDragStart(myDragData);
+        Debug.Log($"OnDragStart--  uiPos:{myDragData.ui_before_Pos}");
     }
 }
 

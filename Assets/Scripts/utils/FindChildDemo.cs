@@ -118,4 +118,11 @@ public  static class FindChildUtil{
         }
         return null;
     }
+
+    public static RectTransform GetRectTransform(this GameObject obj)
+    {
+        if (!obj)
+            return null;
+        return obj.transform as RectTransform;
+    }
 }

@@ -16,6 +16,8 @@ namespace UnityEngine.UI
 
             _eventBase.EventOnClick += OnClickEvent;
             _eventBase.EventOnDrag += OnDragEvent;
+            _eventBase.EventOnDragStart += OnDragStartEvent;
+            _eventBase.EventOnDragEnd += OnDragEndEvent;
         }
 
         void OnClickEvent(MonoBehaviour behaviour ) {
@@ -26,6 +28,14 @@ namespace UnityEngine.UI
         void OnDragEvent(MyDragData myDragData)
         {
             _event.OnDrag(myDragData);
+        }
+        void OnDragStartEvent(MyDragData myDragData)
+        {
+            _event.OnDragStart(myDragData);
+        }
+        void OnDragEndEvent(MyDragData myDragData)
+        {
+            _event.OnDragEnd(myDragData);
         }
 
     }

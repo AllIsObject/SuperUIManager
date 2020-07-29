@@ -10,6 +10,7 @@ public interface IPanel {
     void Display(bool b);
     bool IsVisible { get; }
     void InitPanel();
+    void OnShow();
 }
 public class PanelBase : IPanel
 {
@@ -40,5 +41,20 @@ public class PanelBase : IPanel
     public virtual void OnDrag(MyDragData  myDragData)
     {
 
+    }
+
+    public virtual void OnDragStart(MyDragData myDragData)
+    {
+
+    }
+
+    public virtual void OnDragEnd(MyDragData myDragData)
+    {
+
+    }
+
+    public virtual void OnShow()
+    {
+        
     }
 }
