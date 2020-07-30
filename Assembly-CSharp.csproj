@@ -66,6 +66,9 @@
     <Compile Include="Assets\Scripts\game\test\panel\TestPanel.cs" />
     <Compile Include="Assets\Scripts\game\test\TestControl.cs" />
     <Compile Include="Assets\Scripts\game\test\TestModel.cs" />
+    <Compile Include="Assets\Scripts\json\JSONParser.cs" />
+    <Compile Include="Assets\Scripts\json\JSONWriter.cs" />
+    <Compile Include="Assets\Scripts\test\Test.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyButton.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyComponent.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyDrag.cs" />
@@ -79,6 +82,7 @@
     <Compile Include="Assets\Scripts\ui\MyPanelEventListener.cs" />
     <Compile Include="Assets\Scripts\ui\ugui_exp\IUIEvent.cs" />
     <Compile Include="Assets\Scripts\utils\FindChildDemo.cs" />
+    <None Include="Assets\StreamingAssets\json.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/workspace/unity3d/SuperUIManager_git/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
