@@ -11,6 +11,7 @@ public class TestPanel :MyPanel
     RectTransform drag;
     MyHorizontalLayoutGroup my_hor_Scroll;
     MyHorizontalLayoutGroup content;
+    MyImage Image_fade;
     public TestPanel() {
         _panelResName = "TestPanel";
     }
@@ -21,6 +22,7 @@ public class TestPanel :MyPanel
         drag = gameObject.FindChild("drag").transform as RectTransform;
         my_hor_Scroll = gameObject.FindChild("my_hor_Scroll").GetComponent<MyHorizontalLayoutGroup>();
         content = gameObject.FindChild("content").GetComponent<MyHorizontalLayoutGroup>();
+        Image_fade = gameObject.FindChild("Image_fade").GetComponent<MyImage>();
     }
 
     public override void OnShow()
@@ -32,6 +34,7 @@ public class TestPanel :MyPanel
         content.InitChildren(10,(i,rect)=> {
 
         });
+        Image_fade.IsFade = true;
     }
 
     public override void OnClick(MonoBehaviour behaviour)

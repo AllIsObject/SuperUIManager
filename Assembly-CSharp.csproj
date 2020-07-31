@@ -74,14 +74,20 @@
     <Compile Include="Assets\Scripts\ui\component\MyDrag.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyHorizontalLayoutGroup.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyHorizontalOrVerticalLayoutGroup.cs" />
+    <Compile Include="Assets\Scripts\ui\component\MyImage.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyText.cs" />
+    <Compile Include="Assets\Scripts\ui\component\UGUISpriteAnimation.cs" />
     <Compile Include="Assets\Scripts\ui\component\VerticalLayoutGroup.cs" />
     <Compile Include="Assets\Scripts\ui\IPanel.cs" />
     <Compile Include="Assets\Scripts\ui\MyGUIManager.cs" />
     <Compile Include="Assets\Scripts\ui\MyPanel.cs" />
     <Compile Include="Assets\Scripts\ui\MyPanelEventListener.cs" />
     <Compile Include="Assets\Scripts\ui\ugui_exp\IUIEvent.cs" />
+    <Compile Include="Assets\Scripts\ui\utils\EmojiText\EmojiData.cs" />
+    <Compile Include="Assets\Scripts\ui\utils\EmojiText\EmojiText.cs" />
+    <Compile Include="Assets\Scripts\ui\utils\MarkupExtension.cs" />
     <Compile Include="Assets\Scripts\utils\FindChildDemo.cs" />
+    <None Include="Assets\Shaders\FadeShader.shader" />
     <None Include="Assets\StreamingAssets\json.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/workspace/unity3d/SuperUIManager_git/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
