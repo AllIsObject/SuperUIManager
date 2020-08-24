@@ -23,6 +23,59 @@ public class FindChildDemo : MonoBehaviour {
 /// 查找元素孩子的工具
 /// </summary>
 public  static class FindChildUtil{
+
+    /// <summary>
+    /// 递归搜索第一个匹配
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="go"></param>
+    /// <param name="name"></param>
+    /// <returns></returns>
+    static public T FindInChild<T>(this GameObject go,string name="") where T:Component
+    {
+        if (go == null) return null;
+        T comp = null;
+        if (!string.IsNullOrEmpty(name) && !go.name.Contains(name))
+        {
+            comp = null;
+        }
+        else
+            comp = go.GetComponent<T>();
+        if (comp == null)
+        {
+            for (int i = 0; i < go.transform.childCount; i++)
+            {
+                comp = FindInChild<T>(go.transform.GetChild(i).gameObject,name);
+                if (comp)
+                    return comp;
+            }
+        }
+
+        return comp;
+    }
+
+    static public T AddChild<T>(this GameObject parent) where T : Component
+    {
+        GameObject go = parent.AddChild();
+        go.name = "My" + typeof(T).Name;
+        return go.AddComponent<T>();
+    }
+
+
+    static public GameObject AddChild(this GameObject parent) 
+    {
+        GameObject go = new GameObject();
+        if (parent != null)
+        {
+            var t = go.transform;
+            t.SetParent(parent.transform);
+            t.localPosition = Vector3.zero;
+            t.localRotation = Quaternion.identity;
+            t.localScale = Vector3.one;
+            go.layer = parent.layer;
+        }
+        return go;
+    }
     /// <summary>
     /// GameObject扩展方法
     /// </summary>

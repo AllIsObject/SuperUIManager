@@ -562,3 +562,5 @@ E:\workspace\unity3d\SuperUIManager_git\obj\Debug\Assembly-CSharp.csproj.CoreCom
 E:\workspace\unity3d\SuperUIManager_git\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 E:\workspace\unity3d\SuperUIManager_git\obj\Debug\Assembly-CSharp.dll
 E:\workspace\unity3d\SuperUIManager_git\obj\Debug\Assembly-CSharp.pdb
+E:\workspace\unity3d\SuperUIManager_git\Temp\bin\Debug\UnityEditor.SpatialTracking.dll
+E:\workspace\unity3d\SuperUIManager_git\Temp\bin\Debug\UnityEditor.SpatialTracking.pdb

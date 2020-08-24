@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\json\JSONParser.cs" />
     <Compile Include="Assets\Scripts\json\JSONWriter.cs" />
     <Compile Include="Assets\Scripts\test\Test.cs" />
+    <Compile Include="Assets\Scripts\ui\component\My3DRoomImage.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyButton.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyComponent.cs" />
     <Compile Include="Assets\Scripts\ui\component\MyDrag.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Assets\Scripts\ui\utils\EmojiText\EmojiData.cs" />
     <Compile Include="Assets\Scripts\ui\utils\EmojiText\EmojiText.cs" />
     <Compile Include="Assets\Scripts\ui\utils\MarkupExtension.cs" />
+    <Compile Include="Assets\Scripts\ui\utils\MyUITools.cs" />
     <Compile Include="Assets\Scripts\utils\FindChildDemo.cs" />
     <None Include="Assets\Shaders\FadeShader.shader" />
     <None Include="Assets\StreamingAssets\json.txt" />
@@ -97,6 +99,12 @@
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>E:/workspace/unity3d/SuperUIManager_git/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>E:/workspace/unity3d/SuperUIManager_git/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>E:/workspace/unity3d/SuperUIManager_git/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>E:/workspace/unity3d/SuperUIManager_git/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
